@@ -80,7 +80,7 @@ $(document).ready(function() {
   $(function() {
     typed.typed({
       strings: ["李玟毅.", "a CS student.", "an aspiring hacker.", "a programmer."],
-      typeSpeed: 200, //originally 100
+      typeSpeed: 160, //originally 100
       loop: true,
     });
   });
