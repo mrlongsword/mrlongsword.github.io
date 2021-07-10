@@ -82,7 +82,7 @@
   </div>
   <!-- End section header -->
 
-
+ 
   <!-- start section about us -->
   <div id="about" class="paddsection">
     <div class="container">
@@ -206,17 +206,39 @@
 
           <div class="portfolio-container">
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all games">
-              <a class="popup-img" href="images/portfolio/1.jpg">
-                <img src="images/portfolio/Pong.png" alt="img">
+              <h5>Pong</h5>
+              <a class="popup-img" href="images/portfolio/Pong.png">
+                <img src="images/portfolio/Pong.png" alt="video">
               </a>
+              <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/KA1mY97Phdc" data-target="#myModal">
+                view demo
+              </button>
+              
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all games">
-              <a class="popup-img" href="images/portfolio/1.jpg">
+              <h5>Space Battle</h5>
+              <a class="popup-img" href="images/portfolio/Space Battle.png">
                 <img src="images/portfolio/Space Battle.png" alt="img">
               </a>
+              <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/KA1mY97Phdc" data-target="#myModal">
+                view demo
+              </button>
             </div>
-
+<!--delete this if it dont work>
+< Modal>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        < 16:9 aspect ratio >
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay" allowfullscreen = "always"></iframe>
+</div>
+<end delete-->
             <!--div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography branding">
               <a class="popup-img" href="images/portfolio/2.jpg">
                 <img src="images/portfolio/2.jpg"  alt="img">
@@ -421,7 +443,17 @@
     </div>
   </div>
   <!-- End section footer -->
-
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <!---16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay" allowfullscreen = "always"></iframe>
+  </div>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -436,7 +468,8 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
+  <!--JS for the video player-->
+  <script src="js/video.js"></script>
 </body>
 
 </html>
